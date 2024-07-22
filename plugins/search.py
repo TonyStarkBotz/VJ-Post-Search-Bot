@@ -1,6 +1,6 @@
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit @TonyStark_Botz
+# Join our Telegram Channel For Amazing Bot @TonyStark_Botz
+# Ask Doubt on telegram @TonyStarkBotzXSupport
 
 import asyncio
 from info import *
@@ -27,10 +27,10 @@ async def delete_after_delay(message: Message, delay):
 
 @Client.on_message(filters.text & filters.group & filters.incoming & ~filters.command(["verify", "connect", "id"]))
 async def search(bot, message):
-    vj = database.find_one({"chat_id": ADMIN})
-    if vj == None:
+    tony = database.find_one({"chat_id": ADMIN})
+    if tony == None:
         return await message.reply("**Contact Admin Then Say To Login In Bot.**")
-    User = Client("post_search", session_string=vj['session'], api_hash=API_HASH, api_id=API_ID)
+    User = Client("post_search", session_string=tony['session'], api_hash=API_HASH, api_id=API_ID)
     await User.connect()
     f_sub = await force_sub(bot, message)
     if f_sub==False:
@@ -41,7 +41,7 @@ async def search(bot, message):
     if message.text.startswith("/"):
        return    
     query   = message.text 
-    head    = f"<u>⭕ Here is the results {message.from_user.mention} 👇\n\n💢 Powered By </u> <b><I>@VJ_Botz ❗</I></b>\n\n"
+    head    = f"<u>⭕ Here is the results {message.from_user.mention} 👇\n\n💢 Powered By </u> <b><I>@TonyStark_Botz ❗</I></b>\n\n"
     results = ""
     try:
        for channel in channels:
@@ -67,9 +67,9 @@ async def search(bot, message):
 
 @Client.on_callback_query(filters.regex(r"^recheck"))
 async def recheck(bot, update):
-    vj = database.find_one({"chat_id": ADMIN})
-    User = Client("post_search", session_string=vj['session'], api_hash=API_HASH, api_id=API_ID)
-    if vj == None:
+    tony = database.find_one({"chat_id": ADMIN})
+    User = Client("post_search", session_string=tony['session'], api_hash=API_HASH, api_id=API_ID)
+    if tony == None:
         return await update.message.edit("**Contact Admin Then Say To Login In Bot.**")
     await User.connect()
     clicked = update.from_user.id
@@ -84,7 +84,7 @@ async def recheck(bot, update):
     id      = update.data.split("_")[-1]
     query   = await search_imdb(id)
     channels = (await get_group(update.message.chat.id))["channels"]
-    head    = "<u>⭕ I Have Searched Movie With Wrong Spelling But Take care next time 👇\n\n💢 Powered By </u> <b><I>@VJ_Botz ❗</I></b>\n\n"
+    head    = "<u>⭕ I Have Searched Movie With Wrong Spelling But Take care next time 👇\n\n💢 Powered By </u> <b><I>@TonyStark_Botz ❗</I></b>\n\n"
     results = ""
     try:
        for channel in channels:
