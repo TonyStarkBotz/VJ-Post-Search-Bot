@@ -1,6 +1,6 @@
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit @TonyStark_Botz
+# Join our Telegram Channel For Amazing Bot @TonyStark_Botz
+# Ask Doubt on telegram @TonyStarkBotzXSupport
 
 class script(object):
     START = """**ʜᴇʟʟᴏ {} 🤟**
@@ -25,10 +25,10 @@ class script(object):
 
 ♨️ ɢᴇᴛ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴄʜᴀɴɴᴇʟs ʟɪsᴛ ᴡɪᴛʜ - /connections</b>"""
 
-    ABOUT = """<b>╭━━━━━━━❰ [𝙰𝙱𝙾𝚄𝚃](https://t.me/VJ_Botz) ❱━━━━━━━➣
+    ABOUT = """<b>╭━━━━━━━❰ [𝙰𝙱𝙾𝚄𝚃](https://t.me/TonyStark_Botz) ❱━━━━━━━➣
 
 ┣ ✯ Mʏ Nᴀᴍᴇ:  {}
-┣ ✯ Cʀᴇᴀᴛᴏʀ: <a href='https://t.me/kingvj01'>VJ Bᴏᴛᴢ</a>
+┣ ✯ Cʀᴇᴀᴛᴏʀ: <a href='https://t.me/Tony_Stark_75'>Tᴏɴʏ Sᴛᴀʀᴋ</a>
 ┣ ✯ Lᴀɴɢᴜᴀɢᴇ: <a href='https://www.python.org'>Pʏᴛʜᴏɴ 3</a>
 ┣ ✯ DᴀᴛᴀBᴀsᴇ: <a href='https://cloud.mongodb.com/'>MᴏɴɢᴏDB</a></b>"""
 
