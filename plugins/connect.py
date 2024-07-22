@@ -1,6 +1,6 @@
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit @TonyStark_Botz
+# Join our Telegram Channel For Amazing Bot @TonyStark_Botz
+# Ask Doubt on telegram @TonyStarkBotzXSupport
 
 from info import *
 from utils import *
@@ -10,10 +10,10 @@ from pyrogram import Client, filters
 @Client.on_message(filters.group & filters.command("connect"))
 async def connect(bot, message):
     m=await message.reply("connecting..")
-    vj = database.find_one({"chat_id": ADMIN})
-    if vj == None:
+    tony = database.find_one({"chat_id": ADMIN})
+    if tony == None:
         return await message.reply("**Contact Admin Then Say To Login In Bot.**")
-    User = Client("post_search", session_string=vj['session'], api_hash=API_HASH, api_id=API_ID)
+    User = Client("post_search", session_string=tony['session'], api_hash=API_HASH, api_id=API_ID)
     await User.connect()
     user = await User.get_me()
     try:
@@ -55,10 +55,10 @@ async def connect(bot, message):
 
 @Client.on_message(filters.group & filters.command("disconnect"))
 async def disconnect(bot, message):
-    vj = database.find_one({"chat_id": ADMIN})
-    if vj == None:
+    tony = database.find_one({"chat_id": ADMIN})
+    if tony == None:
         return await message.reply("**Contact Admin Then Say To Login In Bot.**")
-    User = Client("post_search", session_string=vj['session'], api_hash=API_HASH, api_id=API_ID)
+    User = Client("post_search", session_string=tony['session'], api_hash=API_HASH, api_id=API_ID)
     await User.connect()
     m=await message.reply("Please wait..")   
     try:
